@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GutLog Privacy Policy</title>
+<meta name="description" content="How GutLog handles your data: everything stays on your device. No account, no server, no analytics.">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#F6F4F8;
+    --surface:#FFFFFF;
+    --ink:#1B181D;
+    --ink-soft:#5F5A64;
+    --accent:#6E3F86;
+    --rule:#E4DFE8;
+    --amber:#A8762A;
+    --callout-bg:#EDE7F1;
+    --mono-bg:#EDE7F1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#111013;
+      --surface:#1A181C;
+      --ink:#EBE8EE;
+      --ink-soft:#9C96A2;
+      --accent:#C39ED8;
+      --rule:#292630;
+      --amber:#D6A85C;
+      --callout-bg:#211D26;
+      --mono-bg:#211D26;
+    }
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    max-width:40em;
+    margin:0 auto;
+    padding:2.75rem 1.5rem 6rem;
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.9rem;
+    line-height:1.25;
+    margin:0 0 .35rem;
+    color:var(--ink);
+  }
+  h2{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.3rem;
+    margin:2.4rem 0 .9rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink);
+    scroll-margin-top:1rem;
+  }
+  h3{
+    font-size:1.05rem;
+    margin:1.6rem 0 .6rem;
+    color:var(--ink);
+  }
+  p, li{
+    font-size:1rem;
+    color:var(--ink);
+  }
+  p{ margin:0 0 1rem; }
+  .meta{
+    color:var(--ink-soft);
+    font-size:.95rem;
+    margin:0 0 2.25rem;
+  }
+  .lede{
+    color:var(--ink-soft);
+    font-size:1.08rem;
+  }
+  a{ color:var(--accent); }
+  ul, ol{ padding-left:1.3rem; margin:0 0 1rem; }
+  li{ margin-bottom:.5rem; }
+  .callout{
+    background:var(--callout-bg);
+    border-left:4px solid var(--amber);
+    border-radius:10px;
+    padding:1.2rem 1.4rem .2rem;
+    margin:1.75rem 0;
+  }
+  .callout h2, .callout h3{ margin-top:0; border-top:none; padding-top:0; }
+  .toc{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:12px;
+    padding:1.1rem 1.4rem;
+    margin:2.25rem 0;
+  }
+  .toc p{
+    margin:0 0 .6rem;
+    font-weight:600;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--ink-soft);
+  }
+  .toc ol{ margin:0; padding-left:1.2rem; columns:1; }
+  .toc li{ margin-bottom:.4rem; font-size:.95rem; }
+  .toc a{ text-decoration:none; }
+  .toc a:hover{ text-decoration:underline; }
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink-soft);
+    font-size:.9rem;
+  }
+  strong{ color:var(--ink); }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>GutLog Privacy Policy</h1>
+  <p class="meta">Last updated: September 5, 2026</p>
+
+  <p class="lede">GutLog is built so that this can be a short document. There is no account, no
+  server, and no third party involved in how the app works &mdash; so this policy is mostly a
+  description of what stays on your phone, not a list of exceptions.</p>
+
+  <nav class="toc" aria-label="Table of contents">
+    <p>On this page</p>
+    <ol>
+      <li><a href="#overview">The short version</a></li>
+      <li><a href="#health">Health information, and what GutLog is not</a></li>
+      <li><a href="#no-accounts">No accounts, no sign-in</a></li>
+      <li><a href="#what-we-store">What GutLog stores, and where</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#widgets">Widgets</a></li>
+      <li><a href="#notifications">Notifications</a></li>
+      <li><a href="#subscriptions">Subscriptions and payment</a></li>
+      <li><a href="#export">Exporting and sharing your data</a></li>
+      <li><a href="#backups">Device backups</a></li>
+      <li><a href="#no-tracking">No tracking, analytics, or advertising</a></li>
+      <li><a href="#deleting">Deleting your data</a></li>
+      <li><a href="#rights">Your rights, wherever you are</a></li>
+      <li><a href="#childrens-privacy">Children's privacy</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <h2 id="overview">1. The short version</h2>
+  <p>GutLog doesn't collect your data, because GutLog doesn't collect data. Everything you enter
+  &mdash; your meals, your symptoms, your bowel movements, your daily factors, your notes, any photo
+  you attach &mdash; is written into GutLog's own private storage area on your iPhone or iPad: the
+  same sandboxed, on-device storage most apps use, protected by your device's passcode, Face&nbsp;ID
+  or Touch&nbsp;ID like everything else on your phone. There is no account for it to be attached to,
+  and no server for it to travel to. If you delete GutLog, that data is deleted with it. Nobody at
+  William Scott can see what you enter, because it never reaches us in the first place.</p>
+  <p>The one thing on your device that ever talks to a server is the App Store's own billing system,
+  when you subscribe to GutLog Pro &mdash; that is covered in "Subscriptions and payment" below.</p>
+
+  <div class="callout">
+    <h2 id="health">2. Health information, and what GutLog is not</h2>
+    <p>A food and symptom diary is, by its nature, a record of sensitive health information about
+    you. GutLog treats it accordingly: it stays on your device, it is never transmitted, and it is
+    never analysed anywhere but on your own phone. The trigger analysis, the safe-food list and the
+    lifestyle correlations are all computed on-device, in the app, from your own entries.</p>
+    <p><strong>GutLog is not a medical device.</strong> It records what you tell it and shows you
+    the patterns in it. It does not diagnose anything, does not recommend treatment, and is not a
+    substitute for care from a doctor or dietitian who knows your situation. A correlation in your
+    diary is a place to start a conversation, not a conclusion. What is true of people in general
+    may not be true of you.</p>
+    <p><strong>Some symptoms need a doctor rather than a diary</strong> &mdash; among them blood in
+    your stool, unexplained weight loss, fever, persistent vomiting, difficulty swallowing, anaemia,
+    symptoms that wake you at night, or a first onset of symptoms later in life. If you think you
+    may be having a medical emergency, contact your local emergency services right away.</p>
+  </div>
+
+  <h2 id="no-accounts">3. No accounts, no sign-in</h2>
+  <p>GutLog doesn't ask you to sign up, sign in, or create a profile. There is no username, no
+  password, and no email address collected by the app, and no server-side account of any kind for
+  your information to attach to. Nothing you do in GutLog is tied to your identity anywhere but on
+  your own device.</p>
+  <p>The app does ask, optionally, for a first name during setup. It is used for one thing: printing
+  a name on the PDF report you might hand to a clinician. You can leave it blank, change it at any
+  time in Settings, or switch it off for the report entirely.</p>
+
+  <h2 id="what-we-store">4. What GutLog stores, and where</h2>
+  <p>Everything below is stored locally, using Apple's on-device SwiftData framework, inside GutLog's
+  own private storage area on your device. None of it is transmitted to us, to Apple, or to anyone
+  else &mdash; GutLog has no networking code that could send it anywhere, aside from the App Store
+  billing system described later in this policy.</p>
+
+  <h3>4.1 Meals</h3>
+  <p>The date and time, the meal type, the foods you picked (from the built-in catalogue or ones you
+  added yourself), a portion size, an optional free-text note, and an optional photo.</p>
+
+  <h3>4.2 Symptoms</h3>
+  <p>The date and time, which symptom it was, a severity from 1 to 10, its duration if you enter one,
+  and an optional free-text note.</p>
+
+  <h3>4.3 Bowel movements</h3>
+  <p>The date and time, the Bristol stool scale type, urgency, whether the movement felt complete,
+  whether you noted blood or mucus, and an optional free-text note. The blood and mucus flags exist
+  because they matter clinically and belong in a report you show a doctor.</p>
+
+  <h3>4.4 Daily factors</h3>
+  <p>One record per day: a stress rating, hours and quality of sleep, minutes of exercise, glasses of
+  water, the names of any medications or supplements you choose to enter, whether you are
+  menstruating if you choose to record it, and an optional note.</p>
+
+  <h3>4.5 Your own foods</h3>
+  <p>Any food you add yourself: its name, and the FODMAP groups and characteristics you tag it with.</p>
+
+  <h3>4.6 The low-FODMAP protocol</h3>
+  <p>Which phase you are in and when it started, and for each reintroduction challenge, the group
+  being tested, the dates, the doses, the symptoms you record during it, and the verdict.</p>
+
+  <h3>4.7 Your app settings</h3>
+  <p>A handful of small preferences &mdash; whether you've finished setup, your optional name,
+  IBS subtype and goal, your reminder times and on/off choices, your analysis threshold, and the
+  foods you've logged most recently &mdash; stored using iOS's standard on-device settings storage,
+  the same mechanism nearly every app uses for simple preferences. These stay on your device too.</p>
+  <p>Free-text notes are exactly that: genuinely blank until you type into them, with nothing read,
+  scanned, or analysed by anything, and stored as you wrote them.</p>
+
+  <h2 id="photos">5. Photos</h2>
+  <p>You can attach a photo to a meal. When you do, iOS shows you its own photo picker; GutLog is
+  given only the single image you choose and never gets access to the rest of your photo library.
+  The image is compressed and stored inside the app's private storage alongside the meal, on your
+  device. It is not uploaded anywhere, and no image is read, scanned, or analysed by GutLog or by
+  anyone else. Deleting the meal, or removing the photo from it, deletes the copy GutLog holds.</p>
+
+  <h2 id="widgets">6. Widgets</h2>
+  <p>If you add a GutLog widget to your Home Screen or Lock Screen, the app writes a small summary
+  &mdash; what you've logged today, your logging streak, and your top trigger if you have one &mdash;
+  into a storage area shared between the GutLog app and its widget. Both run on your own device.
+  This exists purely so the widget, which runs as its own lightweight process without access to the
+  app's full database, can show something useful without opening the app. That shared summary never
+  leaves your device: it is not a sync feature, and there is no version of it that reaches a server,
+  iCloud, or another device you own.</p>
+
+  <h2 id="notifications">7. Notifications</h2>
+  <p>GutLog's reminders are local notifications, scheduled by the app on your device and delivered by
+  iOS. They are not push notifications: nothing is sent from a server, and no device token, identifier
+  or notification content ever leaves your phone. If you decline the notification permission, or turn
+  reminders off later, the app simply schedules nothing. The reminder text never contains anything
+  you have logged.</p>
+
+  <h2 id="subscriptions">8. Subscriptions and payment</h2>
+  <p>GutLog Pro is sold as an auto-renewing subscription through Apple's App Store, using Apple's own
+  in-app purchase system. That transaction happens entirely between you and Apple.</p>
+  <p>We never see, receive, or store your name, your payment card, your billing address, or your
+  Apple Account details. What the app receives from Apple's StoreKit framework is a signed receipt
+  saying whether this device's Apple Account currently has an active subscription, and when it
+  renews or expires. GutLog reads that to decide whether to unlock the Pro features, and it is not
+  linked to anything you have logged.</p>
+  <p>Apple's handling of the purchase is governed by
+  <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>, not by this one. Apple
+  provides the developer with anonymised, aggregated sales reports &mdash; how many subscriptions
+  were sold in a country, for instance &mdash; which contain no information about individual
+  customers and cannot be connected to any person or to any diary.</p>
+
+  <h2 id="export">9. Exporting and sharing your data</h2>
+  <p>Pro subscribers can generate a PDF report and a CSV file containing their diary. Both are
+  created on your device. Where they go afterwards is entirely your decision: the iOS share sheet
+  hands the file to whatever you pick &mdash; Mail, Messages, Files, AirDrop, a printer, another
+  app. Once you send it somewhere, that destination's own privacy terms apply to the copy you sent,
+  and it is outside our reach. Nothing is exported automatically, and nothing is ever sent to us.</p>
+
+  <h2 id="backups">10. Device backups</h2>
+  <p>If you back up your device to iCloud or to a computer, your GutLog data is included in that
+  backup like any other app's. Those backups are Apple's, governed by Apple's terms and encryption,
+  and they exist so that your diary survives a lost phone. We have no access to them, and no ability
+  to read, restore, or delete one. If you would rather your diary were not in a backup, iOS lets you
+  exclude individual apps from iCloud Backup in its own Settings.</p>
+
+  <h2 id="no-tracking">11. No tracking, analytics, or advertising</h2>
+  <p>GutLog contains no analytics SDK, no crash-reporting service, no advertising, no advertising
+  identifier, and no third-party code that reports on how you use the app. Nothing tracks you across
+  apps or websites, so the App Tracking Transparency prompt never appears &mdash; there is nothing
+  for it to ask about. The app's Privacy Manifest, which Apple requires and publishes on the App
+  Store product page as "Data Not Collected", says the same thing in Apple's own format.</p>
+
+  <h2 id="deleting">12. Deleting your data</h2>
+  <p>Two ways, both immediate and both entirely in your hands. <strong>Settings &rarr; Delete all
+  data</strong> inside the app erases every entry while keeping the app installed. Deleting the app
+  from your device removes the app and its storage together.</p>
+  <p>Because nothing is stored off-device, there is no copy anywhere for us to delete on your behalf,
+  and no way for us or anyone else to recover it once it is gone. Export what you want to keep before
+  you delete.</p>
+
+  <h2 id="rights">13. Your rights, wherever you are</h2>
+  <p>GutLog is available worldwide, and privacy laws differ from country to country. Rights such as
+  access, correction, deletion, portability and objection &mdash; under the EU and UK GDPR, the
+  California Consumer Privacy Act, Brazil's LGPD, India's DPDP Act, and comparable laws elsewhere
+  &mdash; all concern personal data held by a company about you.</p>
+  <p>In GutLog's case there is nothing for those requests to reach: we hold no personal data about
+  you at all. In practice you already exercise every one of those rights directly, without asking
+  anyone. Access and portability are the export in the Report screen; correction is editing an entry;
+  deletion is the button in Settings or deleting the app. There is no profiling, no automated
+  decision-making with legal effects, and no sale or sharing of personal information &mdash; we have
+  none to sell. If you would like this confirmed in writing for your own records, email us and we
+  will confirm it.</p>
+
+  <h2 id="childrens-privacy">14. Children's privacy</h2>
+  <p>GutLog is intended for adults managing their own digestive health, and is not directed at
+  children. We do not knowingly collect information from anyone, of any age &mdash; there is no
+  mechanism in the app by which we could. A parent or guardian who wants a child's diary removed can
+  delete it from the device directly, using either method in section 12.</p>
+
+  <h2 id="changes">15. Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new "last
+  updated" date. Because the app collects nothing, any change is likely to be a clarification rather
+  than a new use of your data. If that ever stopped being true &mdash; if a future version of GutLog
+  needed to send something off your device &mdash; it would be described here plainly, before it
+  shipped, and it would be something you opt into.</p>
+
+  <h2 id="contact">16. Contact</h2>
+  <p>GutLog is made by William Scott. For any question about this policy, email
+  <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a>.</p>
+
+  <footer>
+    <p>This is the Privacy Policy for the GutLog iOS app. See also the
+    <a href="terms.html">Terms of Use</a> and <a href="index.html">Support</a>.</p>
+  </footer>
+</main>
+</body>
+</html>

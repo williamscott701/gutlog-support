@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GutLog Support</title>
+<meta name="description" content="Support, FAQ and contact for GutLog, an IBS food and symptom diary for iOS.">
+<style>
+  :root{
+    color-scheme: light dark;
+    --bg:#F6F4F8;
+    --surface:#FFFFFF;
+    --ink:#1B181D;
+    --ink-soft:#5F5A64;
+    --accent:#6E3F86;
+    --rule:#E4DFE8;
+    --amber:#A8762A;
+    --callout-bg:#EDE7F1;
+    --mono-bg:#EDE7F1;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#111013;
+      --surface:#1A181C;
+      --ink:#EBE8EE;
+      --ink-soft:#9C96A2;
+      --accent:#C39ED8;
+      --rule:#292630;
+      --amber:#D6A85C;
+      --callout-bg:#211D26;
+      --mono-bg:#211D26;
+    }
+  }
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{
+    max-width:40em;
+    margin:0 auto;
+    padding:2.75rem 1.5rem 6rem;
+  }
+  h1{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.9rem;
+    line-height:1.25;
+    margin:0 0 .35rem;
+    color:var(--ink);
+  }
+  h2{
+    font-family:Georgia,"Iowan Old Style","Palatino Linotype",Palatino,serif;
+    font-size:1.3rem;
+    margin:2.4rem 0 .9rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink);
+    scroll-margin-top:1rem;
+  }
+  h3{
+    font-size:1.05rem;
+    margin:1.6rem 0 .6rem;
+    color:var(--ink);
+  }
+  p, li{
+    font-size:1rem;
+    color:var(--ink);
+  }
+  p{ margin:0 0 1rem; }
+  .meta{
+    color:var(--ink-soft);
+    font-size:.95rem;
+    margin:0 0 2.25rem;
+  }
+  .lede{
+    color:var(--ink-soft);
+    font-size:1.08rem;
+  }
+  a{ color:var(--accent); }
+  ul, ol{ padding-left:1.3rem; margin:0 0 1rem; }
+  li{ margin-bottom:.5rem; }
+  .callout{
+    background:var(--callout-bg);
+    border-left:4px solid var(--amber);
+    border-radius:10px;
+    padding:1.2rem 1.4rem .2rem;
+    margin:1.75rem 0;
+  }
+  .callout h2, .callout h3{ margin-top:0; border-top:none; padding-top:0; }
+  .toc{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:12px;
+    padding:1.1rem 1.4rem;
+    margin:2.25rem 0;
+  }
+  .toc p{
+    margin:0 0 .6rem;
+    font-weight:600;
+    font-size:.8rem;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--ink-soft);
+  }
+  .toc ol{ margin:0; padding-left:1.2rem; columns:1; }
+  .toc li{ margin-bottom:.4rem; font-size:.95rem; }
+  .toc a{ text-decoration:none; }
+  .toc a:hover{ text-decoration:underline; }
+  footer{
+    margin-top:3.5rem;
+    padding-top:1.5rem;
+    border-top:1px solid var(--rule);
+    color:var(--ink-soft);
+    font-size:.9rem;
+  }
+  strong{ color:var(--ink); }
+</style>
+</head>
+<body>
+<main>
+
+  <h1>GutLog Support</h1>
+  <p class="meta">GutLog: IBS Food &amp; Symptom Diary &middot; iOS</p>
+
+  <p class="lede">GutLog is a food and symptom diary for IBS that works out which foods keep
+  showing up before your symptoms, how strongly, and how long after eating. This page is where to
+  get help with it.</p>
+
+  <div class="callout">
+    <h2 id="contact">Contact</h2>
+    <p>Email <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a>. GutLog is
+    made by one person, so replies take as long as they take &mdash; but every message is read.</p>
+    <p>It helps to include your iOS version, your device, and what you were doing when something
+    went wrong. Please don't send diary entries you'd rather keep private; they are never needed to
+    diagnose a problem.</p>
+  </div>
+
+  <h2 id="account">Do I need an account?</h2>
+  <p>No. GutLog has no sign-up, no login, and no server. Everything you enter stays on your device.
+  That also means there is no password to reset and no account for anyone to look up &mdash; if
+  something is wrong, the answer is on your phone, not at our end.</p>
+
+  <h2 id="how-long">How long before it finds anything?</h2>
+  <p>About a week. GutLog needs roughly seven days of logging and fifteen meals before it will
+  report its first finding, because below that the numbers aren't worth trusting. Consistency
+  matters more than volume: a diary with every meal in it for ten days is far more useful than a
+  patchy one kept for two months. Turning on the mealtime reminders in Settings is the single
+  biggest thing you can do to get an answer sooner.</p>
+
+  <h2 id="analysis">How does it decide something is a trigger?</h2>
+  <p>For every food, FODMAP group and food characteristic you've logged, GutLog compares how often
+  your symptoms followed it against how often they showed up without it, in three windows: within
+  4&nbsp;hours, 4&ndash;12&nbsp;hours later, and 12&ndash;48&nbsp;hours later. The comparison is a
+  chi-square test, and the strength label &mdash; emerging, likely or strong &mdash; comes from
+  that result together with how many times you've eaten the food.</p>
+  <p>The strongest finding is accepted first, the symptom episodes it explains are set aside, and
+  the rest is scored again. That is what stops a daily staple eaten at lunch from taking the blame
+  for a reaction to dinner. It also means a finding can change or disappear as you log more, which
+  is a feature: the app is showing you what your current diary supports, not a verdict.</p>
+  <p>A correlation is not a cause. GutLog is telling you where to look, and what to raise with a
+  clinician or test in a proper reintroduction challenge.</p>
+
+  <h2 id="data">Where is my data, and how do I get it out?</h2>
+  <p>On your device, and nowhere else. GutLog has no networking code beyond the App Store's own
+  billing, and no analytics of any kind.</p>
+  <p>Pro subscribers can export a doctor-ready PDF report and a CSV of every entry from the Report
+  screen, and send them wherever they like through the normal iOS share sheet.</p>
+  <p>To erase everything, use <strong>Settings &rarr; Delete all data</strong> in the app, or delete
+  the app itself. Because nothing is stored off-device, deleting the app deletes the diary with it.
+  There is no copy left behind for anyone to remove, and no way to recover it afterwards, so export
+  first if you want to keep it.</p>
+
+  <h2 id="foods">A food I eat isn't in the list</h2>
+  <p>GutLog ships with 270 common foods with their FODMAP groups and trigger characteristics
+  already tagged, which is a starting point rather than a world cuisine. Anything missing can be
+  added with <strong>Add your own food</strong> in the food picker: give it a name, and tag its
+  FODMAP groups and characteristics if you know them. Custom foods are analysed exactly like the
+  built-in ones, and stay on your device with everything else.</p>
+  <p>If you don't know a food's FODMAP groups, leave them blank. The food is still tracked by name,
+  and it can still be found as a trigger on its own.</p>
+
+  <h2 id="protocol">The low-FODMAP protocol</h2>
+  <p>The guided protocol has two phases. Elimination cuts the high-FODMAP groups for a few weeks
+  and gives you an avoid-and-swap list for each one. Reintroduction then tests the six groups one
+  at a time, three days each, with a dose schedule and a verdict at the end of each challenge.</p>
+  <p>It is a demanding diet and it is not meant to be permanent. The point of the reintroduction
+  phase is to give you back everything you don't actually react to. Doing this alongside a dietitian
+  is the recommended approach, and the exported report is designed to make that conversation
+  shorter.</p>
+
+  <h2 id="widgets">My widget isn't updating</h2>
+  <p>Widgets refresh on a schedule iOS controls, so a small delay is normal. If a widget is stuck or
+  shows nothing at all, remove it from the Home Screen or Lock Screen and add it again. Opening the
+  app once afterwards gives it fresh data to read.</p>
+
+  <h2 id="reminders">Reminders aren't arriving</h2>
+  <p>Check that notifications are allowed for GutLog in the iOS Settings app, under
+  <strong>Notifications &rarr; GutLog</strong>, and that reminders are switched on in GutLog's own
+  Settings tab. Focus modes and Scheduled Summary can also hold notifications back. The Settings
+  tab shows how many reminders are currently scheduled, which is the quickest way to tell whether
+  the app or the system is the problem.</p>
+
+  <h2 id="subscription">GutLog Pro, trials, and cancelling</h2>
+  <p>Logging is free forever, with no limits on how much you record. GutLog Pro is an optional
+  subscription that unlocks the trigger analysis, safe foods, the lifestyle correlations, the
+  guided reintroduction phase, history beyond the last 30 days, and the PDF and CSV export. It is
+  sold monthly or yearly, and the yearly plan includes a one-week free trial for new subscribers.</p>
+  <p>Prices are set in your own App Store storefront and shown in your local currency, including any
+  tax Apple collects for your country. Subscriptions are billed through your Apple Account and renew
+  automatically unless auto-renew is switched off at least 24 hours before the period ends. You can
+  manage or cancel at any time, including during a free trial, in <strong>Settings &rarr; your name
+  &rarr; Subscriptions</strong> on your device. Cancelling is handled entirely by Apple &mdash; we
+  can't do it for you, and we never see your payment details.</p>
+  <p>Already subscribed but the app doesn't know it &mdash; on a new phone, for instance? Tap
+  <strong>Restore purchases</strong> on the Pro screen, signed in with the same Apple Account you
+  bought it with.</p>
+  <p>Refunds are handled by Apple, not by us, at
+  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+  <div class="callout">
+    <h2 id="health">GutLog is not a medical device</h2>
+    <p>GutLog records what you tell it and shows you the patterns in it. It does not diagnose
+    anything, it does not recommend treatment, and it is not a substitute for care from a doctor or
+    a dietitian who knows your situation. A pattern in your diary is a starting point for that
+    conversation, not a conclusion.</p>
+    <p><strong>Some symptoms need a doctor, not a diary.</strong> Blood in your stool, unexplained
+    weight loss, a fever, persistent vomiting, difficulty swallowing, anaemia, symptoms that wake
+    you at night, or a first onset of symptoms after the age of about 50 are not things to track
+    and watch &mdash; please have them looked at. If you think you may be having a medical
+    emergency, contact your local emergency services right away.</p>
+  </div>
+
+  <h2 id="legal">Privacy and terms</h2>
+  <p>
+    <a href="privacy.html">Privacy Policy</a><br>
+    <a href="terms.html">Terms of Use</a>
+  </p>
+
+  <footer>
+    <p>GutLog &middot; William Scott<br>
+    <a href="mailto:williamscott701@gmail.com">williamscott701@gmail.com</a></p>
+  </footer>
+</main>
+</body>
+</html>
